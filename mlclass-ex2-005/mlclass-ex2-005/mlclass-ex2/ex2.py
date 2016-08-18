@@ -49,8 +49,8 @@ optimalTheta = optimizeTheta(theta, x=X, y=Y)
 
 # splitting the data into two classes, and plot them separately
 # more convenient than using the color argument
-pos = X[np.where(Y==1)[0],:]
-neg = X[np.where(Y==0)[0],:]
+pos = X[np.where(Y == 1)[0], :]
+neg = X[np.where(Y == 0)[0], :]
 plt.plot(pos[:, 1], pos[:, 2], 'o', c='green')
 plt.plot(neg[:, 1], neg[:, 2], 'o', c='red')
 x1_values = np.array([X[np.argmin(X[:, 1]), 1], X[np.argmax(X[:, 1]), 1]])
